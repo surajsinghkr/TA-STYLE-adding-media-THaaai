@@ -1,0 +1,474 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- body ---*/
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ----Section-1---- */
+
+.section-1{
+    background: linear-gradient(to right, rgba(53, 117, 195, 0.9), rgba(138, 239, 145, 0.9)), url(../media/home-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-pages a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 24px;
+    font-weight: 900;
+}
+
+.social-container{
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-container i{
+    color: white;
+    margin-right: 12px;
+}
+
+.social-container .button{
+    background: #D04132;
+    padding: 12px;
+    text-align: center;
+    width: 120px;
+    margin: 24px 0;
+    border-radius: 60px;
+}
+
+.social-container .button a{
+    text-decoration: none;
+    color: white;
+}
+
+.section-1 .article{
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.article-container{
+    width: 45%;
+}
+
+.article-container h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 24px 0;
+}
+
+.article-container .button-container{
+    align-items: center;
+}
+
+.article-container .button-container .button{
+    width: 160px;
+    padding: 16px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.article-container .button-container .button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.article-container .button-container i{
+    color: white;
+    margin-left: 24px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.contact{
+    flex-direction: column;
+}
+
+/*---- Section-2 ----*/
+
+.section-2{
+    align-items: center;
+    margin: 32px auto;
+    justify-content: space-around;
+}
+
+.section-2 .article{
+    width: 35%;
+}
+
+.section-2 .article h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #393939;
+}
+
+.section-2 .article .underline{
+    border-bottom: dashed 8px #D8D8D8;
+    width: 15%;
+    margin: 12px 0;
+}
+
+.section-2 .article p{
+    font-size: 12px;
+    color: #969696;
+    line-height: 1.5;
+    margin: 48px 0;
+}
+
+.section-2 .progress-report{
+    width: 25%;
+}
+
+.section-2 .progress-report .progress{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2 .progress-report .progress .branch{
+    border-bottom: 4px solid #1E1E1E;
+    margin: 16px 0;
+    padding: 8px 0;
+}
+
+.b1{
+    width: 85%;
+}
+
+.b2{
+    width: 90%;
+}
+
+.b3{
+    width: 75%;
+}
+
+.b4{
+    width: 70%;
+}
+
+.section-2 .progress-report i{
+    color: #656565;
+}
+
+/* -----Section-3------*/
+
+.section-3{
+    background: #EFEFEF;
+    padding: 24px 0;
+}
+
+.section-3 .content-wrapper{
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-3 .content-wrapper h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #393939;
+    text-transform: capitalize;
+}
+
+.section-3 .content-wrapper .underline{
+    border-bottom: dashed 8px #D8D8D8;
+    width: 6%;
+    margin: 12px 0;
+}
+
+.section-3 .content-wrapper .row{
+    justify-content: space-between;
+    width: 100%;
+    margin: 24px 0;
+}
+
+.section-3 .content-wrapper .row .row-content{
+    width: 48%;
+    background: #FFFFFF;
+    align-items: center;
+}
+
+.section-3 .content-wrapper .row .row-content .article{
+    padding: 16px;
+}
+
+.section-3 .content-wrapper .row .row-content .article i{
+    font-size: 12px;
+    color: red;
+    margin: 12px 0;
+    font-weight: 600;
+}
+
+.section-3 .content-wrapper .row .row-content .article h2{
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 12px 0;
+    color: #656565;
+}
+
+.section-3 .content-wrapper .row .row-content .article p{
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 12px 0;
+    color: #656565;
+}
+
+.section-3 .content-wrapper .row .row-content .article .button{
+    width: 104px;
+    background: #EFEFEF;
+    padding: 16px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.section-3 .content-wrapper .row .row-content .article .button a{
+    color: #5D5D5D;
+    text-decoration: none;
+}
+
+/* -----Section-4-----*/
+
+.section-4{
+    margin: 24px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-4 h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #656565;
+}
+
+.section-4 .underline{
+    border-bottom: dashed 8px #D8D8D8;
+    width: 6%;
+    margin: 12px 0;
+}
+
+.section-4 .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+}
+
+/* -----Section-5-----*/
+
+.section-5{
+    background: linear-gradient(to right, #1875E7, #89ED64);
+    padding: 24px 0;
+}
+
+.section-5 .wrapper{
+    flex-direction: column;
+    align-items: center;
+    margin: 24px auto;
+}
+
+.section-5 .wrapper h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    margin-top: 24px;
+}
+
+.section-5 .wrapper .underline{
+    border-bottom: dashed 8px #D8D8D8;
+    width: 6%;
+    margin: 12px 0;
+}
+
+.section-5 .wrapper .content{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.section-5 .wrapper .content .form{
+    width: 65%;
+}
+
+.section-5 .wrapper .content .form .name{
+    justify-content: space-between;
+    margin: 24px 0;
+    width: 100%;
+}
+
+.section-5 .wrapper .content .form .button{
+    padding: 16px;
+    background: red;
+    width: 112px;
+    border-radius: 50px;
+    margin: 24px 0;
+}
+
+.section-5 .wrapper .content .form .button a{
+    color: white;
+    text-decoration: none;
+}
+
+.text-area{
+    width: 100%;
+    height: 60px;
+    text-align: left;
+}
+
+.maps iframe{
+    border-radius: 50%;
+}
+
+/*-----Section-6-----*/
+
+.section-6{
+    padding-top: 60px;
+    background: linear-gradient(to right, #414141, #010101);
+    color: white;
+}
+
+.section-6 .wrapper{
+    justify-content: space-between;
+    border-bottom: 1px solid #656565;
+    padding-bottom: 32px;
+}
+
+.company-info{
+    flex-direction: column;
+}
+
+.company-info h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.company-info p{
+    line-height: 1.5;
+    margin: 24px 0;
+}
+
+.company-info i{
+    margin: 12px 0;
+}
+
+.company-info a{
+    text-decoration: none;
+    color: white;
+}
+
+.info-1{
+    width: 40%;
+}
+
+.info-2{
+    width: 15%;
+}
+
+.info-3{
+    width: 10%;
+}
+
+.info-4{
+    width: 25%;
+}
+
+/*-----Footer------*/
+
+.footer{
+    background: linear-gradient(to right, #414141, #010101);
+    color: white;
+    padding: 24px 0;
+}
+
+.footer .wrapper{
+    justify-content: space-between;
+}
+
+.footer .wrapper .contact{
+    width: 50%;
+}
+
+.footer .wrapper .footer-nav{
+    justify-content: space-around;
+    width: 40%;
+}
+
+.footer .wrapper .footer-nav .nav-social i{
+    margin-left: 24px;
+}
